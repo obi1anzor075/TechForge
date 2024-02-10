@@ -137,7 +137,7 @@ body {
 
 .list-subfolders_item {
   margin-right: 20px;
-  background-color: #7e9ec952;
+  background-color: #83a8d83b;
   border-radius: 6px;
   width: calc((100% - 80px) / 4);
   display: flex;
@@ -149,6 +149,11 @@ body {
   margin-bottom: 20px;
   padding: 35px 15px;
   text-decoration: none;
+}
+
+.list-subfolders_item-title{
+  text-decoration: none;
+  color: #000;
 }
 
 /* Footer */
