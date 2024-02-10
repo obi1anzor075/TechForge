@@ -132,14 +132,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-      width: calc(100% - 255px);
+  width: calc(100% - 255px);
 }
 
 .list-subfolders_item {
   margin-right: 20px;
   background-color: #83a8d83b;
   border-radius: 6px;
-  width: calc((100% - 80px) / 4);
+  width: 241px;
   display: flex;
   box-orient: vertical;
   box-direction: normal;
@@ -149,9 +149,10 @@ body {
   margin-bottom: 20px;
   padding: 35px 15px;
   text-decoration: none;
+  text-align: center;
 }
 
-.list-subfolders_item-title{
+.list-subfolders_item-title {
   text-decoration: none;
   color: #000;
 }
