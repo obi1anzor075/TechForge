@@ -8,7 +8,7 @@ body {
 }
 
 #main {
-  min-height: calc(100vh - 298px);
+  min-height: calc(100vh - 294px);
   width: calc(100% - 40px);
   max-width: 1560px;
   margin: 0 auto;
@@ -71,6 +71,11 @@ body {
 }
 /* Search line */
 
+.bg-body-custom {
+  background-color: #1e4776;
+  border-radius: 10px;
+}
+
 .catalog_image {
   vertical-align: bottom;
   margin-right: 10px;
@@ -91,7 +96,7 @@ body {
 }
 
 .catalog_name {
-  color: #fff;
+  color: #fff !important;
   background-color: transparent;
   border: 1px solid transparent;
   margin-right: 18px;

@@ -1,0 +1,14 @@
+
+.about_us {
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.about_us li {
+  padding: 0 0 10px 40px;
+  display: block;
+  margin-bottom: 10px;
+  list-style: none;
+  background: url(https://www.xcom.ru/upload/shop/20_years/li.png) 0 0 no-repeat;
+}
