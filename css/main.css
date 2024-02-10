@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1560px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .info_image,
-.contacts_image {
+.contacts_image, .phone_call {
   width: 20px;
   filter: brightness(0) saturate(100%) invert(25%) sepia(37%) saturate(4524%) hue-rotate(185deg) brightness(93%)
     contrast(101%);
@@ -62,11 +62,17 @@ body {
 }
 
 .info_link,
-.contacts_link {
+.contacts_link, .phone_number {
   text-decoration: none;
   color: #1e4776;
 }
 /* Search line */
+
+.catalog_image {
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
 .catalog-search {
   box-sizing: content-box;
   box-sizing: content-box;
@@ -75,7 +81,7 @@ body {
   -webkit-box-direction: normal;
   flex-flow: row nowrap;
   position: relative;
-  padding: 8px 12px;
+  padding: 12px 12px;
   height: 44px;
   background-color: #1e4776;
   align-items: center;
@@ -90,14 +96,12 @@ body {
 
 .search_line_input {
   font-size: inherit;
-  background: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
-  height: 100%;
-  width: 100%;
+  height: 45px;
+  width: auto;
   margin-right: 8px;
   flex-grow: 1;
-  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   display: flex;
@@ -105,8 +109,8 @@ body {
 }
 
 .button {
+  font-size: 16px;
   display: flex;
-  margin-left: 18px;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -120,12 +124,17 @@ body {
   background: #ff8400;
 }
 
+/* Page content */
+
 /* Footer */
 .footer {
   padding-top: 45px;
   padding-bottom: 20px;
   background: #1e4776;
   color: white;
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-row {
@@ -140,10 +149,10 @@ body {
 }
 
 .footer-copyright {
+  display: flex;
+  align-items: center;
   color: #7e9ec9;
   line-height: 1.3;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer-coppyright-name {
@@ -237,7 +246,8 @@ body {
 
 .footer-contacts {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  align-items: center;
 }
 /*Подпись под связаться со мной*/
 /* .footer-contacts p {
@@ -249,31 +259,6 @@ body {
 
 /*Media requests*/
 @media (max-width: 1069px) {
-  .card {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px !important;
-    margin-top: 10px;
-    width: min(90%, 718px);
-    font-size: 14px;
-  }
-
-  .card-image {
-    width: min(50vw, 500px);
-
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .portfolio {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .section-header {
-    margin-bottom: 40px;
-  }
-
   .footer-coppyright-name {
     font-size: clamp(15px, 2.5vw, 25px);
   }
