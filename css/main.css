@@ -3,7 +3,9 @@
 }
 
 h1 {
-  padding: 15px 0 15px 0;
+  padding: 0px 0 32px 0;
+  font-size: 32px !important;
+  color: #1e4776 !important;
 }
 
 body {
@@ -85,6 +87,8 @@ body {
   margin-right: 10px;
 }
 
+
+
 .catalog-search {
   box-sizing: content-box;
   box-sizing: content-box;
@@ -137,6 +141,10 @@ body {
 }
 
 /* Page content */
+.content {
+  display: flex;
+  margin-top: 12px;
+}
 
 .list-subfolders {
   display: flex;
