@@ -11,22 +11,16 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="icon" href="./image/favicon/favicon.png" type="image/x-icon" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
+		
 	</head>
 	<body>
-		<div id="main">
-			<div class="header">
-				<div class="header_logo">
+	
+			<div class="header_main">
+				<div class="header container_page"><!-- <div class="header_logo">
 					<a class="header_logo_image" href="./index.html"
 						><img src="./image/header/header_logo_image_small.png" alt="Logo"
 					/></a>
-				</div>
+				</div> -->
 				<div class="city_selector">
 					<span class="city_selector_text"
 						>Пенза<img
@@ -34,11 +28,11 @@
 							src="./image/header/shevron_cite_selector.svg"
 					/></span>
 				</div>
-				<div class="working_time">
+				<!-- <div class="working_time">
 					Режим работы
 					<br />
 					<span class="working_hours_time">8:00 - 20:00</span>
-				</div>
+				</div> -->
 				<div class="phone_number">
 					<a class="phone_number" href="88005553535"
 						><img
@@ -64,14 +58,23 @@
 						Контакты
 					</a>
 				</div>
+				</div>
 			</div>
+		
+			<div class="container_page">
 			<div class="catalog-search">
+				<div class="header_logo">
+					<a class="header_logo_image" href="./index.html"
+						><img src="./image/header/header_logo_image_small.png" alt="Logo"
+					/></a>
+				</div>
 				<div class="catalog_name">
-					<img
+					<a href=""><img
 						class="catalog_image"
 						src="./image/search-line/catalog_image.svg"
 						alt=""
 					/><span>Каталог</span>
+				</a>
 				</div>
 				<div class="search_line_input">
 					<input
@@ -79,7 +82,7 @@
 						name="s"
 						value=""
 						autocomplete="off"
-						class="search_line_input"
+						class="search_line__input"
 						placeholder="Поиск по каталогу"
 					/>
 				</div>
@@ -87,98 +90,38 @@
 					<input type="submit" class="button" value="Найти" />
 				</div>
 			</div>
+		</div>
 			<div class="main_content">
-				<h1>Компьютерные комплектующие</h1>
-				<!-- Card-wrapper-start -->
-				<div class="list-subfolders">
-					<a href="#" class="list-subfolders_item" title="HDD Жесткие диски">
-						<div class="list-subfolders_item-img">
-							<img src="./image/content/hdd.png" alt="HDD Жесткие диски" />
-						</div>
-						<div class="list-subfolders_item-title">HDD Жесткие диски</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Блоки питания">
-						<div class="list-subfolders_item-img">
-							<img src="./image/content/power-supply.png" alt="Блоки питания" />
-						</div>
-						<div class="list-subfolders_item-title">Блоки питания</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Видеокарты">
-						<div class="list-subfolders_item-img">
-							<img src="./image/content/video_card.png" alt="Видеокарты" />
-						</div>
-						<div class="list-subfolders_item-title">Видеокарты</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Кабели">
-						<div class="list-subfolders_item-img">
-							<img src="./image/content/cables.png" alt="Кабели" />
-						</div>
-						<div class="list-subfolders_item-title">Кабели</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a
-						href="#"
-						class="list-subfolders_item"
-						title="Контроллеры расширения"
-					>
-						<div class="list-subfolders_item-img">
-							<img
-								height="150px"
-								src="./image/content/controllers_extension.png"
-								alt="Контроллеры расширения"
-							/>
-						</div>
-						<div class="list-subfolders_item-title">Контроллеры расширения</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a
-						href="#"
-						class="list-subfolders_item"
-						title="Кулеры и системы охлаждения"
-					>
-						<div class="list-subfolders_item-img">
-							<img
-								src="./image/content/cooler.png"
-								alt="Кулеры и системы охлаждения"
-							/>
-						</div>
-						<div class="list-subfolders_item-title">
-							Кулеры и системы охлаждения
-						</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Материнские платы">
-						<div class="list-subfolders_item-img">
-							<img
-								src="./image/content/motherboard.png"
-								alt="Материнские платы"
-							/>
-						</div>
-						<div class="list-subfolders_item-title">Материнские платы</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Модули памяти">
-						<div class="list-subfolders_item-img">
-							<img src="./image/content/RAM.png" alt="Модули памяти" />
-						</div>
-						<div class="list-subfolders_item-title">Модули памяти</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Процессоры">
-						<div class="list-subfolders_item-img">
-							<img src="./image/content/CPU.png" alt="Процессоры" />
-						</div>
-						<div class="list-subfolders_item-title">Процессоры</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-				</div>
+		<div id="main">
+<div class="container_page">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="..." class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="..." class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="..." class="d-block w-100" alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+</div>
+		</div>
 
 				<!-- Card-wrapper-end -->
 			</div>

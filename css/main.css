@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 h1 {
@@ -21,10 +22,10 @@ body {
   position: relative;
 }
 
-.container {
-  max-width: 1560px;
-  margin-left: auto;
+.container_page{
+  max-width: 1600px;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .none {
@@ -32,40 +33,45 @@ body {
 }
 
 /* Header */
+.header_main{
+  height: 5vh;
+  background-color: #333;
+}
+
 .header {
   line-height: 1.2;
   display: flex;
-  box-orient: horizontal;
-  box-direction: normal;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  box-align: center;
-  align-items: center;
   font-weight: 600;
   font-size: 16px;
-  color: #333;
-  margin-bottom: 16px;
-  margin-top: 16px;
+  color: #ffff;
 }
 
 .header_logo_image img {
-  height: 100px;
+  height: 70px;
 }
+
 
 .city_selector_shevron {
   margin-left: 10px;
+  filter: brightness(0) invert(1);
 }
 
 .working_hours_time {
-  color: #1e4776;
+  color: #ffffff;
+}
+
+
+.city_selector, .phone_number, .info, .contacts{
+  margin-top: 10px;
+  
 }
 
 .info_image,
 .contacts_image,
 .phone_call {
   width: 20px;
-  filter: brightness(0) saturate(100%) invert(25%) sepia(37%) saturate(4524%) hue-rotate(185deg) brightness(93%)
-    contrast(101%);
+  filter: brightness(0) invert(1);
   vertical-align: bottom;
 }
 
@@ -73,12 +79,12 @@ body {
 .contacts_link,
 .phone_number {
   text-decoration: none;
-  color: #1e4776;
+  color: #ffffff;
 }
 /* Search line */
 
 .bg-body-custom {
-  background-color: #1e4776;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
@@ -91,23 +97,27 @@ body {
 
 .catalog-search {
   box-sizing: content-box;
-  box-sizing: content-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-flow: row nowrap;
   position: relative;
-  padding: 12px 12px;
+  padding-top: 15px;
   height: 44px;
-  background-color: #1e4776;
   align-items: center;
+  margin: 0 10px 0 10px;
 }
 
-.catalog_name {
-  color: #fff !important;
-  background-color: transparent;
-  border: 1px solid transparent;
-  margin-right: 18px;
+.catalog_name a {
+  background: #328ad2;
+  text-align: center;
+  margin: 0;
+  z-index: 30;
+  border-radius: 3px;
+margin: 0 10px 0 10px;
+padding: 10px 24px 14px;
+color: #ffffff;
+text-decoration: none;
 }
 
 .search_line_input {
@@ -121,6 +131,12 @@ body {
   display: flex;
   justify-content: space-between;
   display: flex;
+  flex-grow: 1;
+}
+
+.search_line__input{
+  border: 1px solid grey;
+  border-radius: 5px;
   flex-grow: 1;
 }
 
