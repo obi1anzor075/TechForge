@@ -14,7 +14,7 @@ body {
 }
 
 #main {
-  min-height: calc(100vh - 298px);
+  min-height: calc(100vh - 300px);
   width: calc(100% - 40px);
   max-width: 1560px;
   margin: 0 auto;
@@ -78,8 +78,11 @@ body {
 /* Search line */
 
 .catalog_image {
-  vertical-align: bottom;
-  margin-right: 10px;
+    margin-right: 10px;
+}
+
+.helper-block-link{
+  text-decoration: none;
 }
 
 .catalog-search {
@@ -170,7 +173,7 @@ body {
 
 /* Footer */
 .footer {
-  padding-top: 45px;
+  padding-top: 49px;
   padding-bottom: 20px;
   background: #1e4776;
   color: white;

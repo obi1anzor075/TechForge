@@ -79,13 +79,15 @@
 				</div>
 			</div>
 			<div class="catalog-search">
-				<div class="catalog_name">
-					<img
-						class="catalog_image"
-						src="./image/search-line/catalog_image.svg"
-						alt=""
-					/><span>Каталог</span>
-				</div>
+				<a class="helper-block-link" href="./html/catalog.html">
+					<div class="catalog_name">
+						<img
+							class="catalog_image"
+							src="./image/search-line/catalog_image.svg"
+							alt=""
+						/><span>Каталог</span>
+					</div>
+				</a>
 				<div class="search_line_input">
 					<input
 						type="text"
@@ -102,82 +104,133 @@
 			</div>
 			<!-- Main-page-start -->
 			<div class="main_content">
-				<div id="carouselExampleDark" class="carousel carousel-light slide">
-					<div class="carousel-indicators">
-						<button
-							type="button"
-							data-bs-target="#carouselExampleDark"
-							data-bs-slide-to="0"
-							class="active"
-							aria-current="true"
-							aria-label="Slide 1"
-						></button>
-						<button
-							type="button"
-							data-bs-target="#carouselExampleDark"
-							data-bs-slide-to="1"
-							aria-label="Slide 2"
-						></button>
-						<button
-							type="button"
-							data-bs-target="#carouselExampleDark"
-							data-bs-slide-to="2"
-							aria-label="Slide 3"
-						></button>
+				<div class="main_landing">
+					<div class="helper-block">
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(/image/landing_photos_helper_block/PC_icon.png);
+								"
+							></div>
+							<span>Готовые сборки ПК</span>
+						</a>
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(/image/landing_photos_helper_block/battery.png);
+								"
+							></div>
+							<span>Батареи для ноутбуков</span>
+						</a>
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(/image/landing_photos_helper_block/icon_psu.png);
+								"
+							></div>
+							<span> Блоки питания для ПК</span>
+						</a>
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(/image/landing_photos_helper_block/icon_tools.png);
+								"
+							></div>
+							<span>Расходные материалы</span>
+						</a>
+
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(/image/landing_photos_helper_block/wires.png);
+								"
+							></div>
+							<span>Кабели</span>
+						</a>
 					</div>
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-bs-interval="10000">
-							<img
-								src="./image/carousel-photos/geforce-rtx-40-super-deskop-bann.jpg"
-								class="d-block w-100"
-								alt="..."
-							/>
-							<div class="carousel-caption d-none d-md-block">
-								<h5>NVIDIA GEFORCE RTX 40 SUPER</h5>
-								<p>SUPER-СКОРОСТЬ. SUPER-ВОЗМОЖНОСТИ.</p>
+
+					<div id="carouselExampleDark" class="carousel carousel-light slide">
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="10000">
+								<img
+									src="./image/carousel-photos/MSI_1050x200_mnt.jpg"
+									class="d-block w-100"
+									alt="..."
+								/>
+							</div>
+							<div class="carousel-item" data-bs-interval="2000">
+								<img
+									src="./image/carousel-photos/msi2_1050x200.jpg"
+									class="d-block w-100"
+									alt="..."
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="./image/carousel-photos/1050x200-Сайт (4).webp"
+									class="d-block w-100"
+									alt="..."
+								/>
 							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="2000">
-							<img
-								src="./image/carousel-photos/hyperpc-cs-go-activity-desktop-b.jpg"
-								class="d-block w-100"
-								alt="..."
-							/>
-							<div class="carousel-caption d-none d-md-block">
-								<h5>БУДЬ ЯРЧЕ!</h5>
-								<p>БЕСПЛАТНАЯ ВИНИЛОГРАФИЯ HYPERPC LUMEN</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img
-								src="./image/carousel-photos/hpc-upgrade-center.jpg"
-								class="d-block w-100"
-								alt="..."
-							/>
-							<div class="carousel-caption d-none d-md-block">
-								<h5>БУДЬ ЛУЧШЕ</h5>
-								<p>СДЕЛАЙ СВОЙ КОМПЬЮТЕР МОЩНЕЕ!</p>
-							</div>
-						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
 					</div>
-					<button
-						class="carousel-control-prev"
-						type="button"
-						data-bs-target="#carouselExampleDark"
-						data-bs-slide="prev"
-					>
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button
-						class="carousel-control-next"
-						type="button"
-						data-bs-target="#carouselExampleDark"
-						data-bs-slide="next"
-					>
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
+				</div>
+
+				<div class="landing-section">
+					<div class="button-landing">
+						<a class="btn-landing" href="./html/catalog.html"
+							>НАЙТИ КОМПЛЕКТУЮЩИЕ</a
+						>
+					</div>
+					<div class="services-section">
+						<h2>Наши услуги</h2>
+						<p>
+							Мы предоставляем широкий спектр услуг для наших клиентов. Вот лишь
+							некоторые из них:
+						</p>
+						<ul>
+							<li>
+								Сборка и настройка персональных компьютеров по вашим
+								требованиям.
+							</li>
+							<li>Продажа комплектующих для апгрейда вашего компьютера.</li>
+							<li>Консультации по выбору оборудования и его совместимости.</li>
+							<li>Ремонт и обслуживание компьютеров любой сложности.</li>
+						</ul>
+						<p>
+							Наши специалисты всегда готовы помочь вам в решении любых задач,
+							связанных с компьютерами и комплектующими.
+						</p>
+					</div>
 				</div>
 			</div>
 			<!-- Main-page-end -->
