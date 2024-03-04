@@ -56,3 +56,23 @@
   list-style: none;
   background: url(../image/content/li.png) 0 0 no-repeat;
 }
+
+/* Contacts */
+.content_page_information > div{
+  margin-bottom: 10px;
+}
+.city_text{
+  color:#1e4776;
+  font-size: 18px;
+}
+
+#phone_orange, #mail_orange, #location_orange{
+  width: 20px;
+  margin-right: 5px; 
+  vertical-align: middle;
+}
+
+.mail a, .location{
+  text-decoration: none;
+  color: #1e4776;
+}
