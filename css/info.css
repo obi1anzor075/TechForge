@@ -76,3 +76,22 @@
   text-decoration: none;
   color: #1e4776;
 }
+
+.delivery{
+  background: #fcfcfc;
+  border-radius: 5px;
+  padding: 20px 24px 14px;
+  margin-top: 15px;
+}
+
+.delivery_rules > li{
+  list-style: none;
+  padding: 0 0 5px 40px;
+  display: block;
+  margin-bottom: 10px;
+  list-style: none;
+  background:url(/svg/svgSprite.svg) 0 0 no-repeat;
+  background-size: 15px;
+  background-position-y: 5px;
+  filter: invert(21%) sepia(78%) saturate(7493%) hue-rotate(192deg) brightness(95%) contrast(100%);
+}
