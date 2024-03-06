@@ -58,6 +58,10 @@
 }
 
 /* Contacts */
+.contacts_title {
+  padding-bottom: 5px;
+}
+
 .content_page_information > div {
   margin-bottom: 10px;
 }
@@ -69,8 +73,15 @@
 #phone_orange,
 #mail_orange,
 #location_orange {
-  width: 20px;
+  width: 25px;
   margin-right: 5px;
+  vertical-align: middle;
+}
+
+#location_orange {
+  width: 35px;
+  margin-left: -5px;
+  margin-right: 1px;
   vertical-align: middle;
 }
 

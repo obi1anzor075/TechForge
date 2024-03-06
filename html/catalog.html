@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>TechForge</title>
 		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/lending.css" />
+		<link rel="stylesheet" href="../css/catalog.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -20,7 +22,7 @@
 		/>
 	</head>
 	<body>
-		<section id="main">
+		<div id="main">
 			<section class="header">
 				<div class="header_logo">
 					<a class="header_logo_image" href="../index.html"
@@ -92,102 +94,148 @@
 			<div class="main_content">
 				<h1>Компьютерные комплектующие</h1>
 				<!-- Card-wrapper-start -->
-				<div class="list-subfolders">
-					<a href="#" class="list-subfolders_item" title="HDD Жесткие диски">
-						<div class="list-subfolders_item-img">
-							<img src="../image/content/hdd.png" alt="HDD Жесткие диски" />
-						</div>
-						<div class="list-subfolders_item-title">HDD Жесткие диски</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Блоки питания">
-						<div class="list-subfolders_item-img">
-							<img
-								src="../image/content/power-supply.png"
-								alt="Блоки питания"
-							/>
-						</div>
-						<div class="list-subfolders_item-title">Блоки питания</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Видеокарты">
-						<div class="list-subfolders_item-img">
-							<img src="../image/content/video_card.png" alt="Видеокарты" />
-						</div>
-						<div class="list-subfolders_item-title">Видеокарты</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Кабели">
-						<div class="list-subfolders_item-img">
-							<img src="../image/content/cables.png" alt="Кабели" />
-						</div>
-						<div class="list-subfolders_item-title">Кабели</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a
-						href="#"
-						class="list-subfolders_item"
-						title="Контроллеры расширения"
-					>
-						<div class="list-subfolders_item-img">
-							<img
-								height="150px"
-								src="../image/content/controllers_extension.png"
-								alt="Контроллеры расширения"
-							/>
-						</div>
-						<div class="list-subfolders_item-title">Контроллеры расширения</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a
-						href="#"
-						class="list-subfolders_item"
-						title="Кулеры и системы охлаждения"
-					>
-						<div class="list-subfolders_item-img">
-							<img
-								src="../image/content/cooler.png"
-								alt="Кулеры и системы охлаждения"
-							/>
-						</div>
-						<div class="list-subfolders_item-title">
-							Кулеры и системы охлаждения
-						</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Материнские платы">
-						<div class="list-subfolders_item-img">
-							<img
-								src="../image/content/motherboard.png"
-								alt="Материнские платы"
-							/>
-						</div>
-						<div class="list-subfolders_item-title">Материнские платы</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Модули памяти">
-						<div class="list-subfolders_item-img">
-							<img src="../image/content/RAM.png" alt="Модули памяти" />
-						</div>
-						<div class="list-subfolders_item-title">Модули памяти</div>
-
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
-					<a href="#" class="list-subfolders_item" title="Процессоры">
-						<div class="list-subfolders_item-img">
-							<img src="../image/content/CPU.png" alt="Процессоры" />
-						</div>
-						<div class="list-subfolders_item-title">Процессоры</div>
-						<div class="list-subfolders_item-arrow"></div>
-					</a>
+				<div class="catalog">
+					<div class="list-subfolders">
+						<a href="#" class="list-subfolders_item" title="HDD Жесткие диски">
+							<div class="list-subfolders_item-img">
+								<img src="../image/content/hdd.png" alt="HDD Жесткие диски" />
+							</div>
+							<div class="list-subfolders_item-title">HDD Жесткие диски</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a href="#" class="list-subfolders_item" title="Блоки питания">
+							<div class="list-subfolders_item-img">
+								<img
+									src="../image/content/power-supply.png"
+									alt="Блоки питания"
+								/>
+							</div>
+							<div class="list-subfolders_item-title">Блоки питания</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a href="#" class="list-subfolders_item" title="Видеокарты">
+							<div class="list-subfolders_item-img">
+								<img src="../image/content/video_card.png" alt="Видеокарты" />
+							</div>
+							<div class="list-subfolders_item-title">Видеокарты</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a href="#" class="list-subfolders_item" title="Кабели">
+							<div class="list-subfolders_item-img">
+								<img src="../image/content/cables.png" alt="Кабели" />
+							</div>
+							<div class="list-subfolders_item-title">Кабели</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a
+							href="#"
+							class="list-subfolders_item"
+							title="Контроллеры расширения"
+						>
+							<div class="list-subfolders_item-img">
+								<img
+									height="150px"
+									src="../image/content/controllers_extension.png"
+									alt="Контроллеры расширения"
+								/>
+							</div>
+							<div class="list-subfolders_item-title">
+								Контроллеры расширения
+							</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a
+							href="#"
+							class="list-subfolders_item"
+							title="Кулеры и системы охлаждения"
+						>
+							<div class="list-subfolders_item-img">
+								<img
+									src="../image/content/cooler.png"
+									alt="Кулеры и системы охлаждения"
+								/>
+							</div>
+							<div class="list-subfolders_item-title">
+								Кулеры и системы охлаждения
+							</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a href="#" class="list-subfolders_item" title="Материнские платы">
+							<div class="list-subfolders_item-img">
+								<img
+									src="../image/content/motherboard.png"
+									alt="Материнские платы"
+								/>
+							</div>
+							<div class="list-subfolders_item-title">Материнские платы</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a href="#" class="list-subfolders_item" title="Модули памяти">
+							<div class="list-subfolders_item-img">
+								<img src="../image/content/RAM.png" alt="Модули памяти" />
+							</div>
+							<div class="list-subfolders_item-title">Модули памяти</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+						<a href="#" class="list-subfolders_item" title="Процессоры">
+							<div class="list-subfolders_item-img">
+								<img src="../image/content/CPU.png" alt="Процессоры" />
+							</div>
+							<div class="list-subfolders_item-title">Процессоры</div>
+							<div class="list-subfolders_item-arrow"></div>
+						</a>
+					</div>
+					<!-- Card-wrapper-end -->
+					<div class="helper-block">
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(../image/landing_photos_helper_block/PC_icon.png);
+								"
+							></div>
+							<span>Готовые сборки ПК</span>
+						</a>
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(../image/landing_photos_helper_block/battery.png);
+								"
+							></div>
+							<span>Батареи для ноутбуков</span>
+						</a>
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(../image/landing_photos_helper_block/icon_psu.png);
+								"
+							></div>
+							<span> Блоки питания для ПК</span>
+						</a>
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(../image/landing_photos_helper_block/icon_tools.png);
+								"
+							></div>
+							<span>Принтеры</span>
+						</a>
+						<a href="#" class="helper-block-item">
+							<div
+								class="helper-block-icon"
+								style="
+									background-image: url(../image/landing_photos_helper_block/wires.png);
+								"
+							></div>
+							<span>Кабели</span>
+						</a>
+					</div>
 				</div>
-
-				<!-- Card-wrapper-end -->
 			</div>
-		</section>
+		</div>
 		<!-- main-end -->
 		<div class="footer">
 			<div class="container">

@@ -7,19 +7,23 @@
   margin-top: 15px !important;
 }
 
-.helper-block {
+.helper-block_lending {
   max-width: 230px;
   margin-right: 12px;
 }
 
-.helper-block-icon{
+.helper-block {
+  margin-right: 0;
+}
+
+.helper-block-icon {
   background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25px;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    margin-right: 12px;
+  background-position: center;
+  background-size: 25px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 12px;
 }
 
 .helper-block-item {
@@ -152,4 +156,15 @@
   font-size: 32px;
   color: #1e4776;
   padding-left: 32px;
+}
+
+@media (max-width: 1337px) {
+  .helper-block_lending {
+    display: none;
+  }
+
+  #carouselExampleDark {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

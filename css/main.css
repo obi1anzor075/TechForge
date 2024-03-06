@@ -78,10 +78,10 @@ body {
 /* Search line */
 
 .catalog_image {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.helper-block-link{
+.helper-block-link {
   text-decoration: none;
 }
 
@@ -142,11 +142,16 @@ body {
   margin-top: 12px;
 }
 
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
 .list-subfolders {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  width: calc(100% - 255px);
+  width: max(522px, 75%);
 }
 
 .list-subfolders_item {
