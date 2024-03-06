@@ -1,0 +1,101 @@
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* Developer-block-pc */
+.developer-pc-block{
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 390px;
+    border: 1px solid #d8dbdd;
+    margin-block:15px;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+
+.developer-pc-block > a {
+    text-decoration: none;
+font-size: 14px;
+color: #1e4776;
+}
+
+.helper-block-settings-search{
+    width: 255px;
+    height: 800px;
+    border: 1px solid #d8dbdd;
+    padding: 16px;
+}
+
+.category-container, .category-cost-diapozon, .catalog-developer {
+    margin-top: 12px;
+}
+
+.category-computers, .category-nettops{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.catalog-category >*>*>p{
+    font-size: 14px;
+}
+
+.category-quantity{
+    color: #858997;
+}
+/* Cost diapozon */
+.cost-diapozon{
+    margin-top: 12px;
+}
+.range_filter{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.range_filter_input_wrapper {
+    width: calc(50% - 6px);
+    position: relative;
+}
+
+.range_filter_label {
+    position: absolute;
+    left: 10px;
+    color: #858997;
+    top: calc(50% + 1px);
+    transform: translateY(-60%);
+    font-size: 14px;
+}
+
+.range_filter_input {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px 8px 5px 30px;
+    outline: 0;
+    border: none;
+    color: #686b74;
+    box-sizing: border-box;
+    border: 1px solid #ecf3f9;
+}
+
+.range_filter_input--error {
+    color: #d12626;
+    border: 1px solid #d12626;
+}
+
+/* Developer select */
+.developer-radio-select{
+    display: flex;
+}
+
+#select-developer-category{
+    margin-right: 5px;
+}
