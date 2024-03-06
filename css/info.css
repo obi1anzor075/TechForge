@@ -58,39 +58,42 @@
 }
 
 /* Contacts */
-.content_page_information > div{
+.content_page_information > div {
   margin-bottom: 10px;
 }
-.city_text{
-  color:#1e4776;
+.city_text {
+  color: #1e4776;
   font-size: 18px;
 }
 
-#phone_orange, #mail_orange, #location_orange{
+#phone_orange,
+#mail_orange,
+#location_orange {
   width: 20px;
-  margin-right: 5px; 
+  margin-right: 5px;
   vertical-align: middle;
 }
 
-.mail a, .location{
+.mail a,
+.location {
   text-decoration: none;
   color: #1e4776;
 }
 
-.delivery{
+.delivery {
   background: #fcfcfc;
   border-radius: 5px;
   padding: 20px 24px 14px;
   margin-top: 15px;
 }
 
-.delivery_rules > li{
+.delivery_rules > li {
   list-style: none;
   padding: 0 0 5px 40px;
   display: block;
   margin-bottom: 10px;
   list-style: none;
-  background:url(/svg/svgSprite.svg) 0 0 no-repeat;
+  background: url(../svg/svgSprite.svg) 0 0 no-repeat;
   background-size: 15px;
   background-position-y: 5px;
   filter: invert(21%) sepia(78%) saturate(7493%) hue-rotate(192deg) brightness(95%) contrast(100%);
