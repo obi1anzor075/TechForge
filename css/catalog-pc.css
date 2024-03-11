@@ -1,7 +1,4 @@
-p{
-    margin: 0 !important;
-    padding: 0 !important;
-}
+
 /* Developer-block-pc */
 .developer-pc-block{
     display: flex;
@@ -23,9 +20,9 @@ color: #1e4776;
 
 .helper-block-settings-search{
     width: 255px;
-    height: 800px;
     border: 1px solid #d8dbdd;
     padding: 16px;
+    margin-bottom: 15px;
 }
 
 .category-container, .category-cost-diapozon, .catalog-developer {
@@ -44,6 +41,7 @@ color: #1e4776;
 
 .category-quantity{
     color: #858997;
+    font-size: 14px;
 }
 /* Cost diapozon */
 .cost-diapozon{
@@ -92,10 +90,73 @@ color: #1e4776;
 }
 
 /* Developer select */
+.developer{
+    margin-top: 12px;
+}
+
+
 .developer-radio-select{
     display: flex;
+    margin-bottom: 8px;
+}
+
+.developer-select{
+    width:100%;
+;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-container > * > a{
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+}
+
+.developer-select > * > *{
+    font-size: 14px;
 }
 
 #select-developer-category{
     margin-right: 5px;
+    margin-top: 1px;
+}
+
+.catalog-developer p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.developer-buttons{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.developer-button-confirm{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #0069ab;
+    border-radius: 5px;
+    background-color: #0069ab;
+    color: white;
+}
+
+.developer-button-confirm:hover{
+    background-color:#007bc8;
+    border-color:#007bc8;
+}
+
+.developer-button-declain{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #0069ab;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0069ab;
+}
+
+.developer-button-declain:hover{
+    background-color: #dff1fe;
+
 }
