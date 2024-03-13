@@ -1,3 +1,6 @@
+.main-content{
+    display: flex;
+}
 
 /* Developer-block-pc */
 .developer-pc-block{
@@ -159,4 +162,18 @@ color: #1e4776;
 .developer-button-declain:hover{
     background-color: #dff1fe;
 
+}
+
+/* Catalog PC */
+.catalog-section{
+    margin-inline: 32px;
+}
+
+.catalog-header{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px !important;
+    line-height: 29px;
+    margin-top: 10px;
+    color: #333;
 }
