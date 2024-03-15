@@ -8,17 +8,11 @@ function sendEmail() {
 
   var subject = "Новое сообщение от " + name;
 
-  var body = "Имя: " + name + "
+  var body = "Имя: " + name + "";
 
-  ";
+  body += "Email: " + email + "";
 
-  body += "Email: " + email + "
-
-  ";
-
-  body += "Сообщение:
-
-  " + message;
+  body += "Сообщение:" + message;
 
   window.open("mailto:youremail@example.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
 }
