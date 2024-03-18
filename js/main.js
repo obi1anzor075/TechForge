@@ -14,5 +14,5 @@ function sendEmail() {
 
   body += "Сообщение:" + message;
 
-  window.open("mailto:shindin112@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
+  window.open("mailto:youremail@example.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
 }

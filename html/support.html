@@ -4,11 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Поддержка</title>
-		<link
-			rel="stylesheet"
-			href="https://s.pageclip.co/v1/pageclip.css"
-			media="screen"
-		/>
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/support.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -135,11 +130,11 @@
 					<h1 class="contacts_title">Обратная связь</h1>
 					<div class="feedback">
 						<form
-							name="feedback-form"
+							class="feedback-form"
+							name="FEEDBACK"
 							id="feedbackForm"
 							enctype="multipart/form-data"
-							action="https://send.pageclip.co/sABYxpHqA9PwK3NtMPwEMSzAGpVOyWGQ/feedback-form"
-							class="pageclip-form"
+							action="send.php"
 							method="post"
 						>
 							<div class="feedback_form-main">
@@ -153,11 +148,15 @@
 								<div class="feedback_form-column">
 									<div class="feedback_form-group">
 										<label class="feedback_form-label">Имя</label>
-										<input id="user_name" class="feedback_form-input"
-										name="name"
-										<!-- Изменено на 'name' -->
-										type="text" value="" placeholder="Иванов Иван Иванович"
-										required />
+										<input
+											id="user_name"
+											class="feedback_form-input"
+											name="form_text_10"
+											type="text"
+											value=""
+											placeholder="Иванов Иван Иванович"
+											required
+										/>
 									</div>
 									<div class="feedback_form-group">
 										<label class="feedback_form-label">Способ связи</label>
@@ -169,10 +168,12 @@
 												>Электронная почта</label
 											>
 											<input
-												type="email"
+												class="feedback_form-input"
 												id="user_email"
+												type="email"
+												placeholder="example@email.com"
+												value=""
 												name="email"
-												value="roscoe@example.com"
 												required
 											/>
 										</div>
@@ -192,9 +193,10 @@
 								<div class="feedback_form-group submit">
 									<button
 										id="submitFeedback"
-										class="pageclip-form__submit"
+										class="feedback_form-button"
 										type="submit"
 										name="web_form_submit"
+										onclick="sendEmail()"
 									>
 										Отправить
 									</button>
@@ -256,6 +258,5 @@
 			</div>
 		</div>
 		<script src="../js/main.js"></script>
-		<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 	</body>
 </html>
