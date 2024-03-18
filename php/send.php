@@ -1,21 +1,39 @@
 <?php
-//Создание переменных и фильтрация данных в них
-$fio = $_POST['fio']; //создание переменной
-$email = $_POST['email']; //создание переменной
-$message = $_POST['message']; //создание переменной
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$fio = urldecode($fio); //декодировние от url
-$email = urldecode($email); //декодировние от url
-$message = urldecode($message); //декодировние от url
+require 'vendor/autoload.php';
 
-$fio = trim($fio); //удаление пробелов с начала и с конца
-$email = trim($email); //удаление пробелов с начала и с конца
-$message = trim($message); //удаление пробелов с начала и с конца
+// Получаем данные из формы
+$fio = $_POST['fio'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
-//Отправление полученных данных из формы HTML на почту
-if (mail("daniilshindin_58@mail.ru", "Сообщение в поддержку", "ФИО:".$fio.". E-mail: ".$email. "Сообщение:".$message,"From: info@github.com \r\n"))
-{
-  echo "сообщение успешно отправлено";
-} else {
-  echo "при отправке сообщения возникла ошибка";
-}?>
+// Создание нового объекта PHPMailer
+$mail = new PHPMailer(true);
+
+try {
+    // Устанавливаем параметры SMTP для Mail.ru
+    $mail->isSMTP();
+    $mail->Host = 'smtp.mail.ru';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'daniilshindin_58@mail.ru'; // Ваш логин от почты Mail.ru
+    $mail->Password = 'fast192837465'; // Ваш пароль от почты Mail.ru
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
+
+    // Устанавливаем отправителя и получателя
+    $mail->setFrom($email, $fio); // Используем данные из формы: email и имя пользователя
+    $mail->addAddress('ПОЛУЧАТЕЛЬ@АДРЕС.КОМ', 'ИМЯ_ПОЛУЧАТЕЛЯ');
+
+    // Устанавливаем тему письма и его содержимое
+    $mail->Subject = 'Тема письма';
+    $mail->Body    = $message;
+
+    // Отправляем письмо
+    $mail->send();
+    echo 'Письмо успешно отправлено';
+} catch (Exception $e) {
+    echo "Ошибка при отправке письма: {$mail->ErrorInfo}";
+}
+?>
