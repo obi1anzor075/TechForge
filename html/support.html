@@ -131,11 +131,8 @@
 					<div class="feedback">
 						<form
 							class="feedback-form"
-							name="FEEDBACK"
-							id="feedbackForm"
-							enctype="multipart/form-data"
-							action="send.php"
-							method="post"
+							action="https://formspree.io/f/xqkrddqo"
+							method="POST"
 						>
 							<div class="feedback_form-main">
 								<div class="feedback_form-main_subtext">
@@ -149,9 +146,8 @@
 									<div class="feedback_form-group">
 										<label class="feedback_form-label">Имя</label>
 										<input
-											id="user_name"
 											class="feedback_form-input"
-											name="form_text_10"
+											name="name"
 											type="text"
 											value=""
 											placeholder="Иванов Иван Иванович"
@@ -160,7 +156,9 @@
 									</div>
 									<div class="feedback_form-group">
 										<label class="feedback_form-label">Способ связи</label>
-										<button class="feedback-form-sent_variant">Почта</button>
+										<button class="feedback-form-sent_variant" action="choose">
+											Почта
+										</button>
 									</div>
 									<div class="feedback_tabs">
 										<div class="feedback_form-group">
@@ -169,11 +167,10 @@
 											>
 											<input
 												class="feedback_form-input"
-												id="user_email"
 												type="email"
+												name="email"
 												placeholder="example@email.com"
 												value=""
-												name="email"
 												required
 											/>
 										</div>
@@ -184,7 +181,6 @@
 										<label class="feedback_form-label" for="">Вопрос</label>
 										<textarea
 											class="feedback_form-textarea"
-											id="question"
 											name="message"
 											required
 										></textarea>
@@ -192,7 +188,6 @@
 								</div>
 								<div class="feedback_form-group submit">
 									<button
-										id="submitFeedback"
 										class="feedback_form-button"
 										type="submit"
 										name="web_form_submit"
