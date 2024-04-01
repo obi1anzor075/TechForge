@@ -89,7 +89,7 @@
 /* Landing-section */
 
 .landing-section {
-  padding-top: 70px;
+  padding-top: min(10%,70px);
 }
 
 .button-landing {
@@ -100,7 +100,7 @@
 .btn-landing {
   display: inline-block;
   justify-content: center;
-  width: 300px;
+  width: min(35%,300px);
   height: 55px;
   box-sizing: border-box;
   padding: 0 25px;
@@ -109,7 +109,7 @@
   border: 1px solid #fff;
   border-radius: 50px;
   line-height: 46px;
-  font-size: 18px;
+  font-size: clamp(12px,0.8em,25px);
   font-weight: 600;
   text-decoration: none;
   color: #ffffff;
@@ -133,6 +133,7 @@
   box-shadow:
     0 7px 14px rgb(65 132 144 / 10%),
     0 3px 6px rgb(0 0 0 / 8%);
+    background-color: #0069ab ;
 }
 .btn-landing:active {
   background-color: #808080;

@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 h1 {
   padding: 0px 0 32px 0;
   font-size: 32px !important;
@@ -178,6 +179,9 @@ body {
 
 /* Footer */
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 49px;
   padding-bottom: 20px;
   background: #1e4776;
@@ -187,6 +191,7 @@ body {
   padding-bottom: 50px;
   flex-shrink: 0;
 }
+
 
 .footer-row {
   display: flex;
@@ -300,6 +305,17 @@ body {
   justify-content: right;
   align-items: center;
 }
+
+.w-100{
+  width: auto !important;
+height: auto !important;
+}
+.carousel-control-next, .carousel-control-prev{
+  height: auto !important;
+}
+#carouselExampleDark{
+  height: auto;
+}
 /*Подпись под связаться со мной*/
 /* .footer-contacts p {
   margin: 15px 0;
@@ -320,13 +336,54 @@ body {
   }
 
   .footer-contacts a {
-    font-size: clamp(7px, 1.5vw, 18px) !important;
+    font-size: clamp(7px, 1vw, 18px) !important;
   }
 
   .footer-icons-row img {
     width: 30px;
   }
+  .container, .container-md, .container-sm{
+    max-width: 90% !important;
+  }
+  .services-section >*>*, .services-section >*{
+    font-size: 14px;
+  }
 }
+
+@media (max-width:850px) {
+  .header{
+    margin-top: 10px;
+  }
+.header >*>*{
+  font-size: 16px !important;
+}
+.header >*{
+  font-size: 16px !important;
+}
+
+.working_time{
+  display: none;
+}
+  .header_logo_image{
+    display: none;
+  }
+
+  .catalog_image{
+    display: none;
+  }
+  .catalog_name>*{
+    font-size: 16px;
+  }
+  .search_line_input{
+    height: 35px;
+    min-width: 15px;
+  }
+  .button_search>*{
+    height: 35px;
+    align-items: center !important;
+  }
+}
+
 @media (max-width: 533px) {
   .footer-button {
     display: none;
