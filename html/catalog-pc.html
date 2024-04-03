@@ -1,337 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TechForge</title>
-		<link rel="stylesheet" href="../css/main.css" />
-		<link rel="stylesheet" href="../css/lending.css" />
-		<link rel="stylesheet" href="../css/catalog-pc.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="icon" href="./image/favicon/favicon.png" type="image/x-icon" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
-	</head>
-	<body>
-		<div id="main">
-			<section class="header">
-				<div class="header_logo">
-					<a class="header_logo_image" href="../index.html"
-						><img src="../image/header/header_logo_image_small.png" alt="Logo"
-					/></a>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TechForge</title>
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="../css/lending.css" />
+	<link rel="stylesheet" href="../css/catalog.css" />
+	<link rel="stylesheet" href="../css/catalog-pc.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+	<link rel="icon" href="./image/favicon/favicon.png" type="image/x-icon" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+	<div id="main">
+		<section class="header">
+			<div class="header_logo">
+				<a class="header_logo_image" href="../index.html"><img src="../image/header/header_logo_image_small.png"
+						alt="Logo" /></a>
+			</div>
+			<div class="city_selector">
+				<span class="city_selector_text">Пенза<img class="city_selector_shevron"
+						src="../image/header/shevron_cite_selector.svg" /></span>
+			</div>
+			<div class="working_time">
+				Режим работы
+				<br />
+				<span class="working_hours_time">8:00 - 20:00</span>
+			</div>
+			<div class="phone_number">
+				<a class="phone_number" href="88005553535"><img class="phone_call"
+						src="../image/header/phone-calling.svg" alt="" />8 800 555-35-35</a>
+			</div>
+			<div class="info">
+				<a class="info_link" href="../html/info.html">
+					<img class="info_image" src="../image/header/info.svg" alt="" />
+					О нас
+				</a>
+			</div>
+			<div class="contacts">
+				<a class="contacts_link" href="../html/contacts.html">
+					<img src="../image/header/contacts_image.svg" alt="" class="contacts_image" />
+					Контакты
+				</a>
+			</div>
+		</section>
+		<div class="catalog-search">
+			<a class="helper-block-link" href="../html/catalog.html">
+				<div class="catalog_name">
+					<img class="catalog_image" src="../image/search-line/catalog_image.svg"
+						alt="" /><span>Каталог</span>
 				</div>
-				<div class="city_selector">
-					<span class="city_selector_text"
-						>Пенза<img
-							class="city_selector_shevron"
-							src="../image/header/shevron_cite_selector.svg"
-					/></span>
+			</a>
+			<div class="search_line_input">
+				<input type="text" name="s" value="" autocomplete="off" class="search_line_input"
+					placeholder="Поиск по каталогу" />
+			</div>
+			<div class="button_search">
+				<input type="submit" class="button" value="Найти" />
+			</div>
+		</div>
+		<div class="main-content">
+			<section class="helper-section">
+				<div class="developer-pc-block">
+					<a href="#">Asus</a>
+					<a href="#">Aquarius</a>
+					<a href="#">Chuwi</a>
+					<a href="#">DELL</a>
+					<a href="#">Gigabyte</a>
+					<a href="#">Hyper</a>
+					<a href="#">HP</a>
+					<a href="#">IRBIS</a>
+					<a href="#">LENOVO</a>
+					<a href="#">Phillips</a>
+					<a href="#">Tuf Gaming</a>
+					<a href="#">Samsung</a>
+					<a href="#">VIMARK</a>
+					<a href="#">Xiaomi</a>
 				</div>
-				<div class="working_time">
-					Режим работы
-					<br />
-					<span class="working_hours_time">8:00 - 20:00</span>
-				</div>
-				<div class="phone_number">
-					<a class="phone_number" href="88005553535"
-						><img
-							class="phone_call"
-							src="../image/header/phone-calling.svg"
-							alt=""
-						/>8 800 555-35-35</a
-					>
-				</div>
-				<div class="info">
-					<a class="info_link" href="../html/info.html">
-						<img class="info_image" src="../image/header/info.svg" alt="" />
-						О нас
-					</a>
-				</div>
-				<div class="contacts">
-					<a class="contacts_link" href="../html/contacts.html">
-						<img
-							src="../image/header/contacts_image.svg"
-							alt=""
-							class="contacts_image"
-						/>
-						Контакты
-					</a>
+				<div class="helper-block-settings-search">
+					<div class="catalog-category">
+						<b>Категории</b>
+						<div class="category-container">
+							<div class="category-computers">
+								<a href="#">
+									Компьютеры и его <br />
+									платформы
+								</a>
+								<p class="category-quantity">225</p>
+							</div>
+							<div class="category-nettops">
+								<a href="#">
+									Неттопы и его <br />
+									платформы
+								</a>
+								<p class="category-quantity">0</p>
+							</div>
+						</div>
+						<div class="category-cost-diapozon">
+							<b>Цена, ₽</b>
+							<div class="cost-diapozon">
+								<div class="range_filter">
+									<div class="range_filter_input_wrapper">
+										<label class="range_filter_label">от</label>
+										<input type="number" class="range_filter_input" id="range_input_price_min"
+											data-min="12437" data-max="68438" data-direction="min"
+											placeholder="12437" />
+									</div>
+									<div class="range_filter_input_wrapper">
+										<label class="range_filter_label">до</label>
+										<input type="number" class="range_filter_input" id="range_input_price_max"
+											data-min="12437" data-max="68438" data-direction="max"
+											placeholder="68438" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-developer">
+							<b>Производитель</b>
+							<div class="developer">
+								<div class="developer-radio-select">
+									<input type="radio" name="dev" id="select-developer-category" />
+									<div class="developer-select">
+										<div class="developer-brand">
+											<p>Asus</p>
+										</div>
+										<p class="category-quantity">68</p>
+									</div>
+								</div>
+								<div class="developer-radio-select">
+									<input type="radio" name="dev" id="select-developer-category" />
+									<div class="developer-select">
+										<div class="developer-brand">
+											<p>DELL</p>
+										</div>
+										<p class="category-quantity">36</p>
+									</div>
+								</div>
+								<div class="developer-radio-select">
+									<input type="radio" name="dev" id="select-developer-category" />
+									<div class="developer-select">
+										<div class="developer-brand">
+											<p>Gigabyte</p>
+										</div>
+										<p class="category-quantity">24</p>
+									</div>
+								</div>
+								<div class="developer-radio-select">
+									<input type="radio" name="dev" id="select-developer-category" />
+									<div class="developer-select">
+										<div class="developer-brand">
+											<p>Hyper</p>
+										</div>
+										<p class="category-quantity">18</p>
+									</div>
+								</div>
+								<div class="developer-radio-select">
+									<input type="radio" name="dev" id="select-developer-category" />
+									<div class="developer-select">
+										<div class="developer-brand">
+											<p>Tuf Gaming</p>
+										</div>
+										<p class="category-quantity">12</p>
+									</div>
+								</div>
+								<div class="developer-radio-select">
+									<input type="radio" name="dev" id="select-developer-category" />
+									<div class="developer-select">
+										<div class="developer-brand">
+											<p>Xiaomi</p>
+										</div>
+										<p class="category-quantity">68</p>
+									</div>
+								</div>
+							</div>
+							<div class="developer-buttons">
+								<button class="developer-button-confirm">Применить</button>
+								<button class="developer-button-declain">Сбросить</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<div class="catalog-search">
-				<a class="helper-block-link" href="../html/catalog.html">
-					<div class="catalog_name">
-						<img
-							class="catalog_image"
-							src="../image/search-line/catalog_image.svg"
-							alt=""
-						/><span>Каталог</span>
-					</div>
-				</a>
-				<div class="search_line_input">
-					<input
-						type="text"
-						name="s"
-						value=""
-						autocomplete="off"
-						class="search_line_input"
-						placeholder="Поиск по каталогу"
-					/>
-				</div>
-				<div class="button_search">
-					<input type="submit" class="button" value="Найти" />
-				</div>
-			</div>
-			<div class="main-content">
-				<section class="helper-section">
-					<div class="developer-pc-block">
-						<a href="#">Asus</a>
-						<a href="#">Aquarius</a>
-						<a href="#">Chuwi</a>
-						<a href="#">DELL</a>
-						<a href="#">Gigabyte</a>
-						<a href="#">Hyper</a>
-						<a href="#">HP</a>
-						<a href="#">IRBIS</a>
-						<a href="#">LENOVO</a>
-						<a href="#">Phillips</a>
-						<a href="#">Tuf Gaming</a>
-						<a href="#">Samsung</a>
-						<a href="#">VIMARK</a>
-						<a href="#">Xiaomi</a>
-					</div>
-					<div class="helper-block-settings-search">
-						<div class="catalog-category">
-							<b>Категории</b>
-							<div class="category-container">
-								<div class="category-computers">
-									<a href="#">
-										Компьютеры и его <br />
-										платформы
-									</a>
-									<p class="category-quantity">225</p>
-								</div>
-								<div class="category-nettops">
-									<a href="#">
-										Неттопы и его <br />
-										платформы
-									</a>
-									<p class="category-quantity">0</p>
-								</div>
-							</div>
-							<div class="category-cost-diapozon">
-								<b>Цена, ₽</b>
-								<div class="cost-diapozon">
-									<div class="range_filter">
-										<div class="range_filter_input_wrapper">
-											<label class="range_filter_label">от</label>
-											<input
-												type="number"
-												class="range_filter_input"
-												id="range_input_price_min"
-												data-min="12437"
-												data-max="68438"
-												data-direction="min"
-												placeholder="12437"
-											/>
-										</div>
-										<div class="range_filter_input_wrapper">
-											<label class="range_filter_label">до</label>
-											<input
-												type="number"
-												class="range_filter_input"
-												id="range_input_price_max"
-												data-min="12437"
-												data-max="68438"
-												data-direction="max"
-												placeholder="68438"
-											/>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="catalog-developer">
-								<b>Производитель</b>
-								<div class="developer">
-									<div class="developer-radio-select">
-										<input
-											type="radio"
-											name="dev"
-											id="select-developer-category"
-										/>
-										<div class="developer-select">
-											<div class="developer-brand">
-												<p>Asus</p>
-											</div>
-											<p class="category-quantity">68</p>
-										</div>
-									</div>
-									<div class="developer-radio-select">
-										<input
-											type="radio"
-											name="dev"
-											id="select-developer-category"
-										/>
-										<div class="developer-select">
-											<div class="developer-brand">
-												<p>DELL</p>
-											</div>
-											<p class="category-quantity">36</p>
-										</div>
-									</div>
-									<div class="developer-radio-select">
-										<input
-											type="radio"
-											name="dev"
-											id="select-developer-category"
-										/>
-										<div class="developer-select">
-											<div class="developer-brand">
-												<p>Gigabyte</p>
-											</div>
-											<p class="category-quantity">24</p>
-										</div>
-									</div>
-									<div class="developer-radio-select">
-										<input
-											type="radio"
-											name="dev"
-											id="select-developer-category"
-										/>
-										<div class="developer-select">
-											<div class="developer-brand">
-												<p>Hyper</p>
-											</div>
-											<p class="category-quantity">18</p>
-										</div>
-									</div>
-									<div class="developer-radio-select">
-										<input
-											type="radio"
-											name="dev"
-											id="select-developer-category"
-										/>
-										<div class="developer-select">
-											<div class="developer-brand">
-												<p>Tuf Gaming</p>
-											</div>
-											<p class="category-quantity">12</p>
-										</div>
-									</div>
-									<div class="developer-radio-select">
-										<input
-											type="radio"
-											name="dev"
-											id="select-developer-category"
-										/>
-										<div class="developer-select">
-											<div class="developer-brand">
-												<p>Xiaomi</p>
-											</div>
-											<p class="category-quantity">68</p>
-										</div>
-									</div>
-								</div>
-								<div class="developer-buttons">
-									<button class="developer-button-confirm">Применить</button>
-									<button class="developer-button-declain">Сбросить</button>
-								</div>
-							</div>
+			<div class="catalog-section">
+				<h1 class="catalog-header">Компьютеры</h1>
+				<div class="cards">
+					<!-- Карточка товара -->
+					<div class="card">
+						<div class="card_top">
+							<!-- Изображение-ссылка товара -->
+							<a href="" class="card_image">
+								<img src="https://img.xcomdb.ru/pim/JPG/94/8GVxz7A8Ny_210.webp"
+									alt="Рабочая станция Acer Altos BrainSphere P150 F8 Tower" />
+							</a>
+							<!-- Скидка на товар -->
+							<div class="card_label">-10%</div>
 						</div>
-					</div>
-				</section>
-				<div class="catalog-section">
-					<h1 class="catalog-header">Компьютеры</h1>
-					<div class="cards">
-						<!-- Карточка товара -->
-						<div class="card">
-							<div class="card_top">
-								<!-- Изображение-ссылка товара -->
-								<a href="" class="card_image">
-								  <img
-									src="https://img.xcomdb.ru/pim/JPG/94/8GVxz7A8Ny_210.webp"
-									alt="Рабочая станция Acer Altos BrainSphere P150 F8 Tower"
-								  />
-								</a>
-								<!-- Скидка на товар -->
-								<div class="card_label">-10%</div>
-							  </div>
-							  <!-- Нижняя часть -->
-							  <div class="card_bottom">
-								<!-- Цены на товар (с учетом скидки и без)-->
-								<div class="card_prices">
-								  <div class="card_price card_price-discount">693 438</div>
-								  <div class="card_price card_price-common">870 996</div>
-								</div>
-								<!-- Ссылка-название товара -->
-								<a href="#" class="card_title">
+						<!-- Нижняя часть -->
+						<div class="card_bottom">
+							<!-- Цены на товар (с учетом скидки и без)-->
+							<div class="card_prices">
+								<div class="card_price card_price-discount">693 438</div>
+								<div class="card_price card_price-common"><del>870 996</del></div>
+							</div>
+							<!-- Ссылка-название товара -->
+							<a href="#" class="card_title">
 								Acer Altos BrainSphere P150 F8
-								</a>
-								<!-- Подпись -->
-								<div><label for="charackters"></label></div>
-								<!-- Кнопка добавить в корзину -->
-								<button class="card_add">В корзину</button>
-							  </div>
-						  <!-- Карточка товара .. -->
+							</a>
+							<!-- Подпись -->
+							<div><label class="catalog_item_description" for="charackters">Intel Core i9 12900F, UDIMM
+									DDR4 32 ГБ, SSD 1024 ГБ, NVIDIA RTX A6000, нет ОС, Черный</label></div>
+							<div><label class="catalog_item_description" for="charackters">1045199 US.RSYTA.014</label>
+							</div>
+							<!-- Кнопка добавить в корзину -->
+							<button class="card_add">В корзину</button>
 						</div>
-					
-					  </div>
+						<!-- Карточка товара .. -->
+					</div>
+					<div class="card">
+						<div class="card_top">
+							<!-- Изображение-ссылка товара -->
+							<a href="" class="card_image">
+								<img src="https://img.xcomdb.ru/pim/JPG/94/7DfshH6Xjt_210.webp"
+									alt="Компьютер Lyambda FRONTIER" />
+							</a>
+							<!-- Скидка на товар -->
+							<div class="card_label">-10%</div>
+						</div>
+						<!-- Нижняя часть -->
+						<div class="card_bottom">
+							<!-- Цены на товар (с учетом скидки и без)-->
+							<div class="card_prices">
+								<div class="card_price card_price-discount">385 448</div>
+								<div class="card_price card_price-common"><del>423 984</del></div>
+							</div>
+							<!-- Ссылка-название товара -->
+							<a href="#" class="card_title">
+								Компьютер Lyambda FRONTIER
+							</a>
+							<!-- Подпись -->
+							<div><label class="catalog_item_description" for="charackters">i7-13700KF/­Z790 GAMING
+									X/­64GB DDR5/­1TB SSD/­RTX 4070 TI GAMING OC 12G/­1000W/­Win11Home</label></div>
+							<div><label class="catalog_item_description" for="charackters">1054091 L-GM1739-WH</label></div>
+							<!-- Кнопка добавить в корзину -->
+							<button class="card_add">В корзину</button>
+						</div>
+						<!-- Карточка товара .. -->
+					</div>
+					<div class="card">
+						<div class="card_top">
+							<!-- Изображение-ссылка товара -->
+							<a href="" class="card_image">
+								<img src="https://img.xcomdb.ru/pim/JPG/94/ZB3LLaT5Da_210.webp"
+									alt="Компьютер Lyambda FRONTIER" />
+							</a>
+							<!-- Скидка на товар -->
+							<div class="card_label">-10%</div>
+						</div>
+						<!-- Нижняя часть -->
+						<div class="card_bottom">
+							<!-- Цены на товар (с учетом скидки и без)-->
+							<div class="card_prices">
+								<div class="card_price card_price-discount">336 086</div>
+								<div class="card_price card_price-common"><del>385 448</del></div>
+							</div>
+							<!-- Ссылка-название товара -->
+							<a href="#" class="card_title">
+								Компьютер Lyambda FRONTIER
+							</a>
+							<!-- Подпись -->
+							<div><label class="catalog_item_description" for="charackters">Intel Core i7 13700KF, DIMM DDR5 64 ГБ, SSD 1024 ГБ,RTX 4070 Ti, Win 11 Домашняя, Черный</label></div>
+							<div><label class="catalog_item_description" for="charackters">1054090 L-GM1738-BK</label></div>
+							<!-- Кнопка добавить в корзину -->
+							<button class="card_add">В корзину</button>
+						</div>
+						<!-- Карточка товара .. -->
+					</div>
+					<div class="card">
+						<div class="card_top">
+							<!-- Изображение-ссылка товара -->
+							<a href="" class="card_image">
+								<img src="https://img.xcomdb.ru/pim/JPG/45/1CbmiTLlYy_210.webp"
+									alt="Компьютер Lenovo Legion T5 26IAB7" />
+							</a>
+							<!-- Скидка на товар -->
+							<div class="card_label">-10%</div>
+						</div>
+						<!-- Нижняя часть -->
+						<div class="card_bottom">
+							<!-- Цены на товар (с учетом скидки и без)-->
+							<div class="card_prices">
+								<div class="card_price card_price-discount">162 615</div>
+								<div class="card_price card_price-common"><del>182 656</del></div>
+							</div>
+							<!-- Ссылка-название товара -->
+							<a href="#" class="card_title">
+								Компьютер Lenovo Legion T5 26IAB7
+							</a>
+							<!-- Подпись -->
+							<div><label class="catalog_item_description" for="charackters">i7-12700/­16GB/­1TB SSD/­GeForce RTX 3060 Ti 8GB/­GbitEth/­WiFi/­BT/­500W/­USB kbd/­USB mouse/­noOS/­black</label></div>
+							<div><label class="catalog_item_description" for="charackters">1024689 90SV00JFRU</label></div>
+							<!-- Кнопка добавить в корзину -->
+							<button class="card_add">В корзину</button>
+						</div>
+						<!-- Карточка товара .. -->
+					</div>
+					<div class="card">
+						<div class="card_top">
+							<!-- Изображение-ссылка товара -->
+							<a href="" class="card_image">
+								<img src="https://img.xcomdb.ru/pim/JPG/27/kYYtxDz8aK_210.webp"
+									alt="Компьютер Lenovo Legion T7 34IAZ7" />
+							</a>
+							<!-- Скидка на товар -->
+							<div class="card_label">-10%</div>
+						</div>
+						<!-- Нижняя часть -->
+						<div class="card_bottom">
+							<!-- Цены на товар (с учетом скидки и без)-->
+							<div class="card_prices">
+								<div class="card_price card_price-discount">247 457</div>
+								<div class="card_price card_price-common"><del>285 678</del></div>
+							</div>
+							<!-- Ссылка-название товара -->
+							<a href="#" class="card_title">
+								Компьютер Lenovo Legion T7 34IAZ7
+							</a>
+							<!-- Подпись -->
+							<div><label class="catalog_item_description" for="charackters">Intel Core i7 12700KF, DIMM DDR5 16 ГБ, SSD 1024 ГБ, nVidia GeForce RTX 3080, Windows 11 Домашняя, Черный</label></div>
+							<div><label class="catalog_item_description" for="charackters">1019322 90S200CYRU</label></div>
+							<!-- Кнопка добавить в корзину -->
+							<button class="card_add">В корзину</button>
+						</div>
+						<!-- Карточка товара .. -->
+					</div>
+
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="container">
-				<section class="footer-row">
-					<div class="footer-copyright footer-col">
-						<div class="footer-coppyright-name">© Шиндин Даниил</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<section class="footer-row">
+				<div class="footer-copyright footer-col">
+					<div class="footer-coppyright-name">© Шиндин Даниил</div>
+				</div>
+				<!-- footer-icons -->
+				<div class="footer-icons footesr-col">
+					<p>Мои профили в социальных сетях:</p>
+					<div class="footer-icons-row">
+						<a href="https://t.me/Obi1anzor075" target="_blank">
+							<img src="../image/icons/telegram.svg" alt="Telegram" />
+						</a>
+						<a href="https://vk.com/obi1anzor075" target="_blank">
+							<img src="../image/icons/vk.svg" alt="VK" />
+						</a>
+						<a href="https://github.com/obi1anzor075" target="_blank">
+							<img src="../image/icons/github.svg" alt="GitHub" />
+						</a>
+						<a style="width: 38px" href="https://github.com/obi1anzor075/TechForge" target="_blank">
+							<img src="../image/icons/github_repo.svg" alt="GitHub Repo" />
+						</a>
 					</div>
-					<!-- footer-icons -->
-					<div class="footer-icons footesr-col">
-						<p>Мои профили в социальных сетях:</p>
-						<div class="footer-icons-row">
-							<a href="https://t.me/Obi1anzor075" target="_blank">
-								<img src="../image/icons/telegram.svg" alt="Telegram" />
-							</a>
-							<a href="https://vk.com/obi1anzor075" target="_blank">
-								<img src="../image/icons/vk.svg" alt="VK" />
-							</a>
-							<a href="https://github.com/obi1anzor075" target="_blank">
-								<img src="../image/icons/github.svg" alt="GitHub" />
-							</a>
-							<a
-								style="width: 38px"
-								href="https://github.com/obi1anzor075/TechForge"
-								target="_blank"
-							>
-								<img src="../image/icons/github_repo.svg" alt="GitHub Repo" />
-							</a>
-						</div>
-					</div>
-					<!-- //footer-icons -->
+				</div>
+				<!-- //footer-icons -->
 
-					<div class="footer-contacts footer-col">
-						<a
-							href="mailto:daniilshindin_58@mail.ru"
-							class="footer-button footer-button-animate"
-							>Связаться со мной</a
-						>
-						<a
-							href="mailto:daniilshindin_58@mail.ru"
-							class="footer-button-media footer-button-animate"
-							>Связаться</a
-						>
-					</div>
-				</section>
-			</div>
+				<div class="footer-contacts footer-col">
+					<a href="mailto:daniilshindin_58@mail.ru" class="footer-button footer-button-animate">Связаться со
+						мной</a>
+					<a href="mailto:daniilshindin_58@mail.ru"
+						class="footer-button-media footer-button-animate">Связаться</a>
+				</div>
+			</section>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
