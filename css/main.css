@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 h1 {
   padding: 0px 0 32px 0;
   font-size: 32px !important;
@@ -12,6 +11,7 @@ h1 {
 body {
   margin: 0;
   font-family: "Montserrat";
+  font-size: 16px;
 }
 
 #main {
@@ -33,20 +33,34 @@ body {
 }
 
 /* Header */
-.header {
+.head__info {
   line-height: 1.2;
   display: flex;
   box-orient: horizontal;
   box-direction: normal;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   box-align: center;
   align-items: center;
   font-weight: 600;
   font-size: 16px;
   color: #333;
-  margin-bottom: 16px;
-  margin-top: 16px;
+
+  filter: brightness(0) saturate(100%) invert(39%) sepia(2%) saturate(2665%) hue-rotate(188deg) brightness(98%)
+    contrast(72%);
+}
+
+.working_time,
+.phone_number,
+.info_link,
+.contacts_link {
+  margin-right: 15px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.header > * {
+  margin-right: 10px;
 }
 
 .header_logo_image img {
@@ -57,36 +71,36 @@ body {
   margin-left: 10px;
 }
 
-.working_hours_time {
-  color: #1e4776;
-}
-
 .info_image,
 .contacts_image,
-.phone_call {
+.phone_call,
+.work_time__svg {
   width: 20px;
-  filter: brightness(0) saturate(100%) invert(25%) sepia(37%) saturate(4524%) hue-rotate(185deg) brightness(93%)
-    contrast(101%);
-  vertical-align: bottom;
 }
 
 .info_link,
 .contacts_link,
 .phone_number {
   text-decoration: none;
-  color: #1e4776;
 }
 /* Search line */
 
 .catalog_image {
   margin-right: 10px;
+  width: 18px;
+  transform: translateY(-3px);
+  filter: brightness(0) saturate(100%) invert(99%) sepia(91%) saturate(5%) hue-rotate(203deg) brightness(106%)
+    contrast(100%);
 }
 
 .helper-block-link {
   text-decoration: none;
+  background: #0069ab;
+  padding: 8px;
+  border-radius: 5px;
 }
 
-.catalog-search {
+.header {
   box-sizing: content-box;
   box-sizing: content-box;
   display: flex;
@@ -94,23 +108,25 @@ body {
   -webkit-box-direction: normal;
   flex-flow: row nowrap;
   position: relative;
-  padding: 12px 12px;
+  padding: 18px 12px;
   height: 44px;
-  background-color: #1e4776;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .catalog_name {
   color: #fff;
   background-color: transparent;
   border: 1px solid transparent;
-  margin-right: 18px;
+}
+
+.catalog_name > span {
+  font-size: 16px;
 }
 
 .search_line_input {
   font-size: inherit;
   border: 1px solid transparent;
-  border-radius: 4px;
   height: 45px;
   width: auto;
   margin-right: 8px;
@@ -119,6 +135,10 @@ body {
   justify-content: space-between;
   display: flex;
   flex-grow: 1;
+  color: #7ca4c5;
+  background: #ecf3f9;
+  border-radius: 6px;
+  outline-width: 0;
 }
 
 .button {
@@ -191,7 +211,6 @@ body {
   padding-bottom: 50px;
   flex-shrink: 0;
 }
-
 
 .footer-row {
   display: flex;
@@ -306,16 +325,15 @@ body {
   align-items: center;
 }
 
-.w-100{
+.w-100 {
   width: auto !important;
-height: auto !important;
-}
-.carousel-control-next, .carousel-control-prev{
   height: auto !important;
 }
-#carouselExampleDark{
-  height: auto;
+.carousel-control-next,
+.carousel-control-prev {
+  height: auto !important;
 }
+
 /*Подпись под связаться со мной*/
 /* .footer-contacts p {
   margin: 15px 0;
@@ -342,43 +360,46 @@ height: auto !important;
   .footer-icons-row img {
     width: 30px;
   }
-  .container, .container-md, .container-sm{
+  .container,
+  .container-md,
+  .container-sm {
     max-width: 90% !important;
   }
-  .services-section >*>*, .services-section >*{
+  .services-section > * > *,
+  .services-section > * {
     font-size: 14px;
   }
 }
 
-@media (max-width:850px) {
-  .header{
+@media (max-width: 850px) {
+  .header {
     margin-top: 10px;
   }
-.header >*>*{
-  font-size: 16px !important;
-}
-.header >*{
-  font-size: 16px !important;
-}
+  .header > * > * {
+    font-size: 16px !important;
+  }
+  .header > * {
+    font-size: 16px !important;
+  }
 
-.working_time{
-  display: none;
-}
-  .header_logo_image{
+  .working_time {
+    display: none;
+  }
+  .header_logo_image {
     display: none;
   }
 
-  .catalog_image{
+  .catalog_image {
     display: none;
   }
-  .catalog_name>*{
+  .catalog_name > * {
     font-size: 16px;
   }
-  .search_line_input{
+  .search_line_input {
     height: 35px;
     min-width: 15px;
   }
-  .button_search>*{
+  .button_search > * {
     height: 35px;
     align-items: center !important;
   }
