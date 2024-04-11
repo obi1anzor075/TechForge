@@ -2,6 +2,30 @@
     display: flex;
 }
 
+/*Cards*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1250px;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 225px;
+  min-height: 540px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
 /* Developer-block-pc */
 .developer-pc-block{
     display: flex;
@@ -166,7 +190,7 @@ color: #1e4776;
 
 /* Catalog PC */
 .catalog-section{
-    margin-inline: 32px;
+    margin-left: 32px;
 }
 
 .catalog-header{

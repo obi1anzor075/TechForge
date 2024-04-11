@@ -76,6 +76,7 @@ body {
 .phone_call,
 .work_time__svg {
   width: 20px;
+  vertical-align: sub;
 }
 
 .info_link,
@@ -91,6 +92,7 @@ body {
   transform: translateY(-3px);
   filter: brightness(0) saturate(100%) invert(99%) sepia(91%) saturate(5%) hue-rotate(203deg) brightness(106%)
     contrast(100%);
+  vertical-align: bottom;
 }
 
 .helper-block-link {
@@ -120,7 +122,7 @@ body {
   border: 1px solid transparent;
 }
 
-.catalog_name > span {
+.catalog_name {
   font-size: 16px;
 }
 
@@ -169,29 +171,26 @@ body {
 }
 
 .list-subfolders {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  width: max(522px, 75%);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-right: 30px;
 }
 
 .list-subfolders_item {
-  margin-right: 20px;
   background-color: #83a8d83b;
   border-radius: 6px;
   width: 241px;
   display: flex;
-  box-orient: vertical;
-  box-direction: normal;
   flex-direction: column;
-  box-align: center;
-  align-items: center;
-  margin-bottom: 20px;
   padding: 35px 15px;
   text-decoration: none;
   text-align: center;
 }
 
+.list-subfolders_item-img {
+  height: 150px;
+}
 .list-subfolders_item-title {
   text-decoration: none;
   color: #000;
